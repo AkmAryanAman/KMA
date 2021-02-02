@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body> <!--style="background-image: url(banner.jpg);background-attachment: fixed;background-repeat: no-repeat;background-size: cover;">-->
+        <!--<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-10">
+                            <a class="navbar-brand" href="#">Navbar</a>
+                        </div>
+                        <div class="col-2">
+                            <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Admission<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Shopping<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Gallery<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container-fluid bg-dark">
+            
+            <div class="">
+                <div style="background-image:url(Weapon.jpg);background-position: center;background-repeat:
+                            no-repeat;background-size: cover;position:relative;min-height: 480px">
+                    <div style="position: absolute;bottom: 0;background: rgb(0, 0, 0);background: rgba(0, 0, 0, 0.5);
+                                color: #f1f1f1;width: 100%;padding: 20px">
+                        <div class="row">
+                            <div class="col-6 d-block d-md-none">
+                                <img src="{% static 'images/icon1.png' %}" class="img-responsive" style="max-height: 60px;left: 0px">
+                            </div>
+    
+                            <div class="col-6 d-block d-md-none" align="right">
+                                <img src="{% static 'images/icon2.jpg' %}" class="img-responsive img-rounded" style="max-height: 60px;border-radius: 50%;right: 0px">
+                            </div>
+                            <div class="col-md-8 d-block d-md-none">
+                                <h2 align="center" style="font-family: Verdana, Arial, Helvetica, sans-serif"><b>KNOCK - DOWN</b><br>MARTIAL ART ACADEMY</h2>
+                                <hr class="bg-white">
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-md-2 d-none d-md-block">
+                                <img src="{% static 'images/icon1.png' %}" class="img-responsive" style="max-height: 150px">
+                            </div>
+                            <div class="col-md-8 d-none d-md-block">
+                                <h2 align="center" style="font-family: Verdana, Arial, Helvetica, sans-serif"><b>KNOCK - DOWN</b><br>MARTIAL ART ACADEMY</h2>
+                                <hr class="bg-white">
+                            </div>
+                            <div class="col-md-2 d-none d-md-block" align="right">
+                                <img src="{% static 'images/icon2.jpg' %}" class="img-responsive img-rounded" style="max-height: 150px;border-radius: 50%">
+                            </div>
+                        </div>
+                        <div class="row"><br/><br/></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Site section -->
+        <div class="container-fluid bg-white mt-4 mb-4">
+            <br/>
+            <div class="m-4" >
+                <div class="d-block d-md-block" style="max-height: 400px;">
+                    <div class="row">
+                        <div class="col-md-7 border-right">
+                            <div class="m-2">
+                                <h3 style="color:#7C2620">About us</h3>
+                                <hr class="w-50" align="left" style="background-color: #CA615A">
+                                <h6 style="text-align: justify;font-size:19px"><b>Member of International Karate Organization (IKO) Kyokushin Kai-Kan India</b></h6>
+                                <table>
+                                    <tr>
+                                        <td><b> Affiliated by </b> </td>
+                                        <td width="10px"> : </td>
+                                        <td> State Karate Association of Bihar</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td width="10px"></td>
+                                        <td>Karate Association of India</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td width="10px"></td>
+                                        <td> World Karate Federation</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b> Recognised by </b></td>
+                                        <td width="10px"> : </td>
+                                        <td> International Olympic Committee</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td width="10px"></td>
+                                        <td>Govt. of India (Ministry of Youth Affairs & Sports)</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <!--<div class="mx-auto rounded pt-4">
+                                <h3 class="alert alert-light border rounded" style="color:#3498DB">Login</h3>
+                                <form >
+                                    <div class="alert alert-danger">
+                                        <p>Error</p>
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Email</span>
+                                        </div>
+                                        <input class="form-control" type="email"
+                                               id="email" name="email" value="{{values.email}}" placeholder="a****@example.com" required>
+                                    </div>
+                                    <br>
+                                    <div class="input-group" required>
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon2">Password</span>
+                                        </div>
+                                        <input class="form-control" type="password"
+                                               id="password" name="password" placeholder="**********" required>
+                                    </div>
+                                    <br>
+                                    <button type="submit" class="btn btn-primary col-lg-4 mb-4" value="Login"> Login </button>
+                                    <div class="row" style="font-size: 10px;">
+                                        <p class="col-4"><a href="#"><b> FORGOT PASSWORD </b></a></p>
+                                        <P class="col-1"></P>
+                                        <p class="col-7">NOT RGISTERED USER? <a href="#"><b> SIGN UP </b></a></p>
+                                    </div>
+                                </form>
+                            </div>-->
+                
+
+                            <div class="m-2">
+                                <h3 align="center" style="color:#7C2620">Announcement</h3>
+                                <hr class="w-50" align="center" style="background-color: #CA615A">
+                                <marquee behavior="scroll" direction="up" scrollamount="2" onMouseOver="this.stop()" onMouseOut="this.start()">
+                                    <ul style="font-size: small;max-height: 200px;">
+                                        <li><a href="#" style="color: black;">This is the first file from AICTE Academy so dont try to download.</a></li>
+                                        <li><a href="#" style="color: black;">This is the first file from AICTE Academy so dont try to download.</a></li>
+                                        <li><a href="#" style="color: black;">This is the first file from AICTE Academy so dont try to download.</a></li>
+                                        <li><a href="#" style="color: black;">This is the first file from AICTE Academy so dont try to download.</a></li>
+                                        <li><a href="#" style="color: black;">This is the first file from AICTE Academy so dont try to download.</a></li>
+                                        <li><a href="#" style="color: black;">This is the first file from AICTE Academy so dont try to download.</a></li>
+                                        <li><a href="#" style="color: black;">This is the first file from AICTE Academy so dont try to download.</a></li>
+                                        <li><a href="#" style="color: black;">This is the first file from AICTE Academy so dont try to download.</a></li>
+                                        <li><a href="#" style="color: black;">This is the first file from AICTE Academy so dont try to download.</a></li>
+                                    </ul>
+                                    
+                                </marquee>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-none d-md-none" style="max-height: 500px;">
+                    <div class="row">
+                        <div class="col-md-7 border-right">
+                            <div class="m-2">
+                                <h3 style="color:#7C2620">About us</h3>
+                                <hr class="w-50" align="left" style="background-color: #CA615A">
+                                <h6 style="text-align: justify;font-size:19px"><b>Member of International Karate Organization (IKO) Kyokushin Kai-Kan India</b></h6>
+                                <table>
+                                    <tr>
+                                        <td><b> Affiliated by </b> </td>
+                                        <td width="10px"> : </td>
+                                        <td> State Karate Association of Bihar</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td width="10px"></td>
+                                        <td>Karate Association of India</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td width="10px"></td>
+                                        <td> World Karate Federation</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b> Recognised by </b></td>
+                                        <td width="10px"> : </td>
+                                        <td> International Olympic Committee</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td width="10px"></td>
+                                        <td>Govt. of India (Ministry of Youth Affairs & Sports)</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="mx-auto rounded pt-4">
+                                <h3 class="alert alert-light border rounded" style="color:#7C2620">Login</h3>
+                                <form >
+                                    <!--<div class="alert alert-danger">
+                                        <p>Error</p>
+                                    </div>-->
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Email</span>
+                                        </div>
+                                        <input class="form-control" type="email"
+                                               id="email" name="email" value="{{values.email}}" placeholder="a****@example.com" required>
+                                    </div>
+                                    <br>
+                                    <div class="input-group" required>
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon2">Password</span>
+                                        </div>
+                                        <input class="form-control" type="password"
+                                               id="password" name="password" placeholder="**********" required>
+                                    </div>
+                                    <br>
+                                    <button type="submit" class="btn col-lg-4 mb-4" value="Login" style="background-color: #7C2620;"> Login </button>
+                                </form>
+                            </div>
+                
+
+                            <!--<div class="m-2">
+                                <h3 align="center" style="color:#7C2620">Announcement</h3>
+                                <hr class="w-50" align="center" style="background-color: #CA615A">
+                                <marquee behavior="scroll" direction="up" scrollamount="2" onMouseOver="this.stop()" onMouseOut="this.start()">
+                                    <ul style="font-size: small;max-height: 200px;">
+                                        <li><a href="#" style="color: black;">This is the first file from AICTE Academy so dont try to download.</a></li>
+                                        <li><a href="#" style="color: black;">This is the first file from AICTE Academy so dont try to download.</a></li>
+                                        <li><a href="#" style="color: black;">This is the first file from AICTE Academy so dont try to download.</a></li>
+                                        <li><a href="#" style="color: black;">This is the first file from AICTE Academy so dont try to download.</a></li>
+                                        <li><a href="#" style="color: black;">This is the first file from AICTE Academy so dont try to download.</a></li>
+                                        <li><a href="#" style="color: black;">This is the first file from AICTE Academy so dont try to download.</a></li>
+                                        <li><a href="#" style="color: black;">This is the first file from AICTE Academy so dont try to download.</a></li>
+                                        <li><a href="#" style="color: black;">This is the first file from AICTE Academy so dont try to download.</a></li>
+                                        <li><a href="#" style="color: black;">This is the first file from AICTE Academy so dont try to download.</a></li>
+                                    </ul>
+                                    
+                                </marquee>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+
+        <div class="container-fluid bg-dark border-bottom mt-4 border-top border-white p-1">
+            <br/>
+            <div class="m-4">
+                <div class="row" style="margin-bottom: -60px;font-size: 13px;">
+                    <div class="col-md-1"></div>
+                    <div class="col-3 bg-white border p-4" align="center"><b>ADMISSION</b></div>
+                    <div class="col-3 bg-white border p-4" align="center"><b>PAYMENT</b></div>
+                    <div class="col-3 bg-white border p-4" align="center"><b>SHOPPING</b></div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark"><br/></div>
+
+        <div class="container-fluid bg-dark border-bottom p-1">
+            <div class="m-4">
+                <div class="row" style="margin-bottom: -60px;font-size: 13px;">
+                    <div class="col-md-1"></div>
+                    <div class="col-3 bg-white border p-4" align="center"><b>VIDEOS</b></div>
+                    <div class="col-3 bg-white border p-4" align="center"><b>GALLERY</b></div>
+                    <div class="col-3 bg-white border p-4" align="center"><b>BRANCH</b></div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark mb-4"><br/><br/><br><br></div>
+        <div class="container-fluid bg-white mt-4 mb-4 ">
+            <br/>
+            <div class="m-4">
+                <div class="row">
+                    <div class="col-md-5 border-right">
+                        <div class="m-2">
+                            <h3 class="p-2" align="center" style="color:#7C2620">Learn</h3>
+                            <hr class="w-50" align="center" style="background-color: #CA615A">
+                            <div class="row" style="font-size: 14px;">
+                                <div class="col-2"></div>
+                                <div class="col-8">
+                                    <p align="left"> ✓ SELF DEFENCE </p>
+                                    <p align="left"> ✓ SELF CONTROL </p>
+                                    <p align="left"> ✓ SELF CONFIDENCE </p>
+                                    <p align="left"> ✓ FORGET PAIN </p>
+                                    <p align="left"> ✓ DISCIPLINE </p>
+                                </div>
+                                <div class="col-2"></div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="m-2">
+                            <h3 class="p-2" align="center" style="color:#7C2620">Arts</h3>
+                            <hr class="w-75" align="center" style="background-color: #CA615A">
+                            <div class="row" style="font-size: 14px;">
+                                <div class="col-1"></div>
+                                <div class="col-5">
+                                    <p align="left"> ✓ MMA </p>
+                                    <p align="left"> ✓ YOGA </p>
+                                    <p align="left"> ✓ KARATE </p>
+                                    <p align="left"> ✓ NUNCHAKU </p>
+                                    <p align="left"> ✓ KICK-BOXING </p>
+                                </div>
+                                <div class="col-5">
+                                    <p align="left"> ✓ STICK FIGHTING </p>
+                                    <p align="left"> ✓ SWORD FIGHTING </p>
+                                    <p align="left"> ✓ STREET FIGHTING </p>
+                                    <p align="left"> ✓ COMBAT FIGHTING </p>
+                                    <p align="left"> ✓ WEAPONS TRAINING </p>
+                                </div>
+                                <div class="col-1"></div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        
+        <div class="container-fluid border-bottom mt-4 border-top ">
+            <div class="m-4">
+                <br/>
+                <h3 align="center" style="color:#7C2620">Ower Team</h3>
+                <hr class="w-50" align="center" style="background-color: #CA615A">
+
+                <div class="row">
+                    <div class="col-md-3 p-1">
+                        <div class="border">
+                            <p align="center" style="font-size: 14px;">Aryan Aman</p>
+                            <p align="center" style="font-size: 13px;">Engineering From LNJPIT, Chapra</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-1">
+                        <div class="border">
+                            <p align="center" style="font-size: 14px;">Aryan Aman</p>
+                            <p align="center" style="font-size: 13px;">Engineering From LNJPIT, Chapra</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-1">
+                        <div class="border">
+                            <p align="center" style="font-size: 14px;">Aryan Aman</p>
+                            <p align="center" style="font-size: 13px;">Engineering From LNJPIT, Chapra</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-1">
+                        <div class="border">
+                            <p align="center" style="font-size: 14px;">Aryan Aman</p>
+                            <p align="center" style="font-size: 13px;">Engineering From LNJPIT, Chapra</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="container-fluid bg-dark border-bottom mt-4 border-top border-white ">
+            <br/>
+            <div class="m-4 border-bottom">
+
+                <!-- Start Row -->
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 text-white">
+
+                        <!-- Start Row -->
+                        <div class="row" style="font-size: 13px;">
+                            <div class="col-3">
+                                <div class="p-2">
+                                    <p align="center"><b> WHAT WE DO </b></p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="p-2">
+                                    <p align="center"><b> OUR WORK</b></p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="p-2">
+                                    <p align="center"><b> COMPANY </b></p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="p-2">
+                                    <p align="center"><b> CONTACT </b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <!-- End Row -->
+
+                <!-- Start Row -->
+                <div class="row text-white">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="row m-4">
+                            <div class="col-3"><a href="#"><i class="fa fa-whatsapp"></i></a></div>
+                            <div class="col-3">ME</div>
+                            <div class="col-3">ME</div>
+                            <div class="col-3">ME</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <!-- End row -->
+
+                <!-- Start Row -->
+                <div class="row text-white">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6" style="font-size: 13px;">
+                        <p align="center"> Office : New Agarwa, Motihari, E. Champaran, Bihar - 845401</p>
+                        <p align="center"> 1234567890 </p>
+                        <p align="center"> ak@gmail.com </p>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                <!-- End row -->
+            </div>
+            <p align="center" class="text-white" style="font-size: 13px;">Copyright @ 2021 Karate. All rights reserved.</p>
+
+        </div>
+
+        <!-- Script-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
+    
