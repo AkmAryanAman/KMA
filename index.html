@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Knock - Down Martial Art Academy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="color.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=shadow-multiple">
+        -->
+        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="color.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=shadow-multiple">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {font-family: "Roboto", sans-serif}
+            .w3-bar-block .w3-bar-item {
+            padding: 16px;
+            font-weight: bold;
+            }
+            .w3-sofia {
+            font-family: "Allerta Stencil", Sans-serif;
+            }
+            .w3-lobster {
+            font-family: "Lobster", Sans-serif;
+            }
+            .blink_me {
+            animation: blinker 1s linear infinite;
+            }
+
+            @keyframes blinker {
+            50% {
+                    opacity: 0;
+                }
+            }
+        </style>
+    </head>
+<body>
+
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
+        <a class="w3-bar-item w3-button w3-border-bottom w3-large w3-row" href="#"><img class="w3-col" src="icon1.png" style="width:80%;">
+            <i class="fa fa-remove w3-button w3-hide-large" href="javascript:void(0)" onclick="w3_close()" style="width: 20%;"></i>
+        </a>
+        <br>
+        <a class="w3-bar-item w3-button " href="Login.html">Login & Signup</a>
+        <a class="w3-bar-item w3-button w3-border-bottom" href="#">Cart / INR : 00</a>
+        <br>
+        <a class="w3-bar-item w3-button w3-teal" href="#">Home</a>
+        <a class="w3-bar-item w3-button" href="#">Admission</a>
+        <a class="w3-bar-item w3-button" href="#">Products</a>
+        <a class="w3-bar-item w3-button" href="NewGallery.html">Gallery</a>
+        
+        <div hidden>
+            <a class="w3-bar-item w3-button" onclick="myAccordion('demo')" href="javascript:void(0)">Shopping <i class="fa fa-caret-down"></i></a>
+            <div id="demo" class="w3-hide">
+                <a class="w3-bar-item w3-button" href="#">Products</a>
+                <a class="w3-bar-item w3-button" href="#">Cart</a>
+                <a class="w3-bar-item w3-button" href="#">Link</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay">
+    </div>
+
+    <div class="w3-main" style="margin-left:250px;">
+
+        <div id="myTop" class="w3-container w3-top w3-2021-inkwell w3-large">
+            <p><i class="fa fa-bars w3-button w3-2021-main w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+            <span id="myIntro" class="w3-hide w3-2021-main w3-sofia" >KNOCK - DOWN Martial Art Academy</span></p>
+        </div>
+
+        <!-- Header -->
+        <div class="w3-hide-medium w3-hide-small">
+            <header class="w3-container w3-2021-inkwell" style="padding:64px 32px">
+                <div class="w3-row">
+                    <h1 class="w3-col" style="width: 20%;"></h1>
+                    <h1 class="w3-xxxlarge w3-2021-main w3-sofia w3-col" style="width: 60%;">KNOCK - DOWN </h1>
+                </div>
+                <div class="w3-row">
+                    <h1 class="w3-col" style="width: 12%;"></h1>
+                    <h1 class="w3-xxxlarge w3-2021-main w3-sofia w3-col" style="width: 80%;">Martial Art Academy</h1>
+                </div>
+                
+            </header>
+        </div>
+        <div class="w3-hide-small w3-hide-large">
+            <header class="w3-container w3-2021-inkwell" style="padding:64px 32px">
+                <div class="w3-row">
+                    <h1 class="w3-col" style="width: 30%;"></h1>
+                    <h1 class="w3-xxlarge w3-2021-main w3-sofia w3-col" style="width: 60%;">KNOCK - DOWN </h1>
+                </div>
+                <div class="w3-row">
+                    <h1 class="w3-col" style="width: 20%;"></h1>
+                    <h1 class="w3-xxlarge w3-2021-main w3-sofia w3-col" style="width: 70%;">Martial Art Academy</h1>
+                </div>
+                
+            </header>
+        </div>
+        <div class="w3-hide-large w3-hide-medium">
+            <header class="w3-container w3-2021-inkwell" style="padding:64px 32px">
+                <div class="w3-row">
+                    <h1 class="w3-col" style="width: 20%;"></h1>
+                    <h1 class="w3-xlarge w3-2021-main w3-sofia w3-col" style="width: 60%;">KNOCK - DOWN </h1>
+                </div>
+                <div class="w3-row">
+                    <h1 class="w3-col" style="width: 10%;"></h1>
+                    <h1 class="w3-xlarge w3-2021-main w3-sofia w3-col" style="width: 90%;">Martial Art Academy</h1>
+                </div>
+                
+            </header>
+        </div>
+
+        <!-- About Institute -->
+        <div class="w3-row" style="margin-top: 10px;margin-bottom: 10px;padding: 10px;" style="min-height: 200px;">
+            <div class="w3-twothird w3-panel w3-pale-blue w3-leftbar w3-border-blue w3-card-4" style="min-height: 262px;">
+                <div class="w3-row">
+                    <h3 class="w3-lobster" style="margin: 20px;">About Us </h3>
+                </div>
+                <div class="w3-row">
+                    <table style="font-size:16px;font-family: Yanone Kaffeesatz;">
+                        <tr>
+                            <td><b> Affiliated by </b> </td>
+                            <td width="10px"> : </td>
+                            <td> State Karate Association of Bihar</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td width="10px"></td>
+                            <td>Karate India Organisation</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td width="10px"></td>
+                            <td> World Karate Federation</td>
+                        </tr>
+                        <tr>
+                            <td><b> Recognised by </b></td>
+                            <td width="10px"> : </td>
+                            <td> International Olympic Committee</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td width="10px"></td>
+                            <td>Govt. of India (Ministry of Youth Affairs & Sports)</td>
+                        </tr>
+                    </table>
+                    <br><br>
+                </div>
+            </div>
+            <div class="w3-third w3-panel w3-pale-blue w3-leftbar w3-border-blue w3-card-4">
+                <div class="w3-row ">
+                    <h3 class="w3-lobster" align="center" style="margin: 20px;">Announcement</h3>
+                    <marquee behavior="scroll" direction="up" scrollamount="1" onMouseOver="this.stop()" onMouseOut="this.start()">
+                        <ul class="w3-ul w3-tiny" style="max-height: 180q   qpx;min-height: 180px;font-family: Oswald;">
+                            <li><a href="#" >This is the first file from AICTE Academy so dont try to download.<sup class="blink_me" style="color: #C3073F;"><b> New </b></sup></a></li>
+                            <li><a href="#" >This is the first file from AICTE Academy so dont try to download.</a></li>
+                            <li><a href="#" >This is the first file from AICTE Academy so dont try to download.</a></li>
+                            
+                        </ul>
+                        
+                    </marquee>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Arts -->
+        <div class="w3-row w3-2021-background-choice2">
+            <div class="w3-twothird w3-2021-background-choice2" >
+                <div class="w3-row" style="margin-top: 12px;">
+                    <div class="w3-col" style="width: 33%;padding: 5px;">
+                        <div class="image-class1">
+                            <img src="nunchaku.jpg" alt="Avatar" class="w3-image">
+                            <div class="overlay">
+                                <div class="text-on-image" style="font-family: oswald;font-size:15px">NUNCHAKU</div>
+                            </div>
+                        </div>
+                        <div class="image-class1" style="margin-top: 10px;">
+                            <img src="weapons training.jpg" alt="Avatar" class="w3-image">
+                            <div class="overlay">
+                                <div class="text-on-image" style="font-family: oswald;font-size:15px">WEAPONS TRAINING</div>
+                            </div>
+                        </div>
+                        <div class="image-class1" style="margin-top: 10px;">
+                            <img src="KICK-BOXING.jpg" alt="Avatar" class="w3-image">
+                            <div class="overlay">
+                                <div class="text-on-image" style="font-family: oswald;font-size:15px">KICK-BOXING</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col" style="width: 33%;padding: 5px;">
+                        <div class="image-class1" >
+                            <img src="sward fighting.jpg" alt="Avatar" class="w3-image">
+                            <div class="overlay">
+                                <div class="text-on-image" style="font-family: oswald;font-size:15px">SWORD FIGHTING</div>
+                            </div>
+                        </div>
+                        <div class="image-class1" style="margin-top: 10px;">
+                            <img src="MMA.jpg" alt="Avatar" class="w3-image">
+                            <div class="overlay">
+                                <div class="text-on-image" style="font-family: oswald;font-size:15px">MMA</div>
+                            </div>
+                        </div>
+                        <div class="image-class1" style="margin-top: 10px;">
+                            <img src="KARATE.jpg" alt="Avatar" class="w3-image">
+                            <div class="overlay">
+                                <div class="text-on-image" style="font-family: oswald;font-size:15px">KARATE</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="w3-col" style="width: 33%;padding: 5px;">
+                        
+                        <div class="image-class1" >
+                            <img src="Strite fighting.jpeg" alt="Avatar" class="w3-image">
+                            <div class="overlay">
+                                <div class="text-on-image" style="font-family: oswald;font-size:15px">STREET FIGHTING</div>
+                            </div>
+                        </div>
+                        <div class="image-class1" style="margin-top: 10px;">
+                            <img src="COMBAT FIGHTING.jpg" alt="Avatar" class="w3-image">
+                            <div class="overlay">
+                                <div class="text-on-image" style="font-family: oswald;font-size:15px">COMBAT FIGHTING</div>
+                            </div>
+                        </div>
+                        <div class="image-class1" style="margin-top: 10px;">
+                            <img src="STICK FIGHTING.jpg" alt="Avatar" class="w3-image">
+                            <div class="overlay">
+                                <div class="text-on-image" style="font-family: oswald;font-size:15px">STICK FIGHTING</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="w3-third w3-2021-background-choice1">
+                <div class="w3-display-container w3-panel w3-pale-blue w3-leftbar">
+                    <img src="karate pic.jpg" alt="Lights" class="w3-image" style="object-fit: cover;opacity:0.6">
+                    <div class="w3-display-topmiddle w3-container w3-lobster " style="width: 75%;">
+                        <p class="w3-xxlarge font-effect-shadow-multiple w3-bottombar">Arts</p>
+                        <div style="font-size:14px;font-family: Yanone Kaffeesatz;font-weight: bold;">
+                            <a> <i class="fa fa-check w3-2021-color-choice1" aria-hidden="true"></i> MMA</a><br>
+                            <a> <i class="fa fa-check w3-2021-color-choice1" aria-hidden="true"></i> YOGA</a><br>
+                            <a> <i class="fa fa-check w3-2021-color-choice1" aria-hidden="true"></i> KARATE</a><br>
+                            <a> <i class="fa fa-check w3-2021-color-choice1" aria-hidden="true"></i> NUNCHAKU</a><br>
+                            <a> <i class="fa fa-check w3-2021-color-choice1" aria-hidden="true"></i> KICK-BOXING</a><br>
+                            <a> <i class="fa fa-check w3-2021-color-choice1" aria-hidden="true"></i> STICK FIGHTING</a><br>
+                            <a> <i class="fa fa-check w3-2021-color-choice1" aria-hidden="true"></i> SWORD FIGHTING</a><br>
+                            <a> <i class="fa fa-check w3-2021-color-choice1" aria-hidden="true"></i> STREET FIGHTING</a><br>
+                            <a> <i class="fa fa-check w3-2021-color-choice1" aria-hidden="true"></i> COMBAT FIGHTING</a><br>
+                            <a> <i class="fa fa-check w3-2021-color-choice1" aria-hidden="true"></i> WEAPONS TRAINING</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <!-- Body Section -->
+        <div class="w3-row w3-pale-blue" style="margin: 20px;">
+            <div class="w3-third" style="padding: 10px;box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" 
+                onmouseover="this.className='w3-third color-on-hover';" onmouseout="this.className='w3-third'">
+                <div style="width: 100%;" >
+                    <p style="margin-left: 30%; width: 35%;font-size: 50px;"> 
+                        &nbsp;&nbsp;<i class="fa fa-user text-white" style="font-size: 50px;color: #2D32EE;"></i>
+                    </p>
+                    <p align="center" style="font-family: lobster;font-size: 20px;">Take Admission</p>
+                </div>
+            </div>
+            <div class="w3-third" style="padding: 10px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" 
+                onmouseover="this.className='w3-third color-on-hover';" onmouseout="this.className='w3-third'">
+                <div style="width: 100%;">
+                    <p style="margin-left: 30%; width: 35%;font-size: 50px;">
+                        &nbsp;&nbsp;<i class="fa fa-cart-arrow-down text-white" style="font-size: 50px;color: #2D32EE;"></i>
+                    </p>
+                    <p align="center" style="font-family: lobster;font-size: 20px;">Product</p>
+                </div>
+            </div>
+            <div class="w3-third" style="padding: 10px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" 
+                onmouseover="this.className='w3-third color-on-hover';" onmouseout="this.className='w3-third'"
+                onclick="location.href='NewGallery.html'">
+                <div style="width: 100%;">
+                    <p style="margin-left: 30%; width: 35%;font-size: 50px;">
+                        &nbsp;&nbsp;<i class="fa fa fa-image text-white" style="font-size: 50px;color: #2D32EE;"></i>
+                    </p>
+                    <p align="center" style="font-family: lobster;font-size: 20px;">Gallery</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <!-- Learning -->
+        <div class="w3-row w3-2021-background-choice2">
+            <div class="w3-half w3-2021-background-choice1">
+                <div class="w3-display-container">
+                    <img src="meditation.jpg" alt="Lights" class="w3-image" style="object-fit: cover;opacity:0.6">
+                    <div class="w3-display-topmiddle w3-container w3-lobster">
+                        <p class="w3-large ">During Training You have</p>
+                        <p class="w3-xxlarge font-effect-shadow-multiple">Learn</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-half w3-2021-background-choice2">
+                <div class="w3-lobster">
+                    <br>
+                    <div class="w3-row">
+                        <img src="SELF DEFENCE.png" alt="Lights" class="w3-image w3-circle w3-col" style="width: 12%;">
+                        <p class="w3-col" style="width: 10%;"></p>
+                        <p class="w3-col w3-large font-effect-shadow-multiple" style="width: 60%;">SELF DEFENCE</p>
+                    </div>
+                    <br>
+                    <div class="w3-row">
+                        <img src="SELF CONTROL.png" alt="Lights" class="w3-image w3-circle w3-col" style="width: 12%;">
+                        <p class="w3-col" style="width: 10%;"></p>
+                        <p class="w3-col w3-large font-effect-shadow-multiple" style="width: 60%;">SELF CONTROL</p>
+                    </div>
+                    <br>
+                    <div class="w3-row">
+                        <img src="SELF CONFIDENCE.webp" alt="Lights" class="w3-image w3-circle w3-col" style="width: 12%;">
+                        <p class="w3-col" style="width: 10%;"></p>
+                        <p class="w3-col w3-large font-effect-shadow-multiple" style="width: 60%;">SELF CONFIDENCE</p>
+                    </div>
+                    <br>
+                    <div class="w3-row">
+                        <img src="SELF CONTROL.png" alt="Lights" class="w3-image w3-circle w3-col" style="width: 12%;">
+                        <p class="w3-col" style="width: 10%;"></p>
+                        <p class="w3-col w3-large font-effect-shadow-multiple" style="width: 60%;">FORGET PAIN</p>
+                    </div>
+                    <br>
+                    <div class="w3-row">
+                        <img src="DISCIPLINE.webp" alt="Lights" class="w3-image w3-circle w3-col" style="width: 12%;">
+                        <p class="w3-col" style="width: 10%;"></p>
+                        <p class="w3-col w3-large font-effect-shadow-multiple" style="width: 60%;">DISCIPLINE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <footer class="w3-container" style="background-color: #1F2833;">
+            <div class="w3-row w3-border-bottom ">
+                <div class="w3-col" style="width: 70%;color: #66FCF1;">
+                    <h3 class="w3-sofia">Knock - Down Martial Art Academy</h3>
+                </div>
+                <div class="w3-col" style="width: 30%;color: #C5C6C7;">
+                    <p style="font-family: oswald;">Contact us : 1234567890 </p>
+                    <p>
+                        &nbsp;&nbsp;
+                        <a class="" href="https://wa.me/+918294254911?text=Hello Sir, I wanna join you." target="_blank"><i class="fa fa-whatsapp" style="color: #34B7F1;font-size: 20px;"></i></a>
+                        &nbsp;&nbsp;
+                        <a href="mailto:knockdownmartialart@gmail.com" target="_blank"><i class="fa fa-envelope-o text-white" style="font-size: 20px;color: #ec6161;"></i></a>
+                        &nbsp;&nbsp;
+                        <a href="https://www.facebook.com/KnockDownMartialArtAcademy" target="_blank"><i class="fa fa-facebook-square text-primary" style="font-size: 20px;color: #4b26f0;"></i></a>
+                        &nbsp;&nbsp;
+                        <a href="https://www.instagram.com/knockdownmartialart/" target="_blank"><i class="fa fa-instagram" style="color: #C3073F;font-size: 20px;"></i></a>
+
+                    </p>
+                </div>
+            </div>
+            <div class="w3-row w3-border-bottom" >
+                <div class="w3-col" style="width: 70%;color: #66FCF1;padding: 30px;">
+                    <h4 style="color: #909090;font-family: lobster;font-size: 28px;">Mr. Kumar Ji</h4>
+                    <p style="color: #646466;font-family: oswald;">Founder & Chairman at <a href="https://www.facebook.com/KnockDownMartialArtAcademy" target="_blank" style="color: #C5C6C7;"><b> Knock-Down Martial Art Academy, Bihar Kyokushin Karate</b></a></p>
+                    <p style="color: #646466;font-family: oswald;">General Secretary at <a href="https://www.facebook.com/districtkarateassociation" target="_blank" style="color: #C5C6C7;"><b> District Karate Association of East Champaran</b></a></p>
+                    <p style="color: #646466;font-family: oswald;">Instructor & Chief Representative of Bihar at<a href="https://www.facebook.com/I.K.O.Kyokushinkaikan" target="_blank" style="color: #C5C6C7;"><b> 国際空手道連盟 極真会館　IKO Kyokushinkaikan </b></a></p>
+                    <br>
+                    
+                </div>
+                <div class="w3-col" style="width: 30%;color: #C5C6C7;padding: 30px;">
+                    <img src="kumar Ji.png" class="img-responsive" style="max-height: 200px;">
+                </div>
+            </div>
+        </footer>
+
+        <!-- About Developer-->
+        <footer class="w3-container" style="background-color: #C5C6C7;">
+            <div class="w3-row w3-border-bottom " style="font-family: lobster">
+                <div class="w3-col" style="width: 60%;">
+                    <p style="font-size: 15px;">Design & Developed By : Aryan Aman</p>
+                </div>
+                <div class="w3-col" style="width: 40%;">
+                    <p>Contact us : akm.aryanaman@gmail.com</p>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+
+    <script>
+    // Open and close the sidebar on medium and small screens
+    function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Change style of top container on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+        document.getElementById("myIntro").classList.add("w3-show-inline-block");
+    } else {
+        document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+        document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+    }
+    }
+
+    // Accordions
+    function myAccordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme";
+    } else { 
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-theme", "");
+    }
+    }
+    </script>
+     
+</body>
+</html> 
