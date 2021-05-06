@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Knock - Down Martial Art Academy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="color.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=shadow-multiple">-->
+        
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="color.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=shadow-multiple">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overlock SC">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {font-family: "Roboto", sans-serif}
+            .w3-bar-block .w3-bar-item {
+            padding: 16px;
+            font-weight: bold;
+            }
+            .w3-sofia {
+            font-family: "Allerta Stencil", Sans-serif;
+            }
+            .w3-lobster {
+            font-family: "Lobster", Sans-serif;
+            }
+            .blink_me {
+            animation: blinker 1s linear infinite;
+            }
+
+            @keyframes blinker {
+            50% {
+                    opacity: 0;
+                }
+            }
+        </style>
+    </head>
+<body>
+
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
+        <div class="w3-row">
+            <a class="w3-col w3-bar-item w3-button w3-border-bottom w3-large " style="width:100%;"  href="index.html">
+                <img src="icon1.png" style="width:100%;" >
+            </a>
+            <!--<a class="w3-col" style="width: 20%;" align="right">
+                <i class="fa fa-remove w3-button w3-hide-large " href="javascript:void(0)" onclick="w3_close()" ></i>
+            </a>-->
+            
+        </div>
+        
+        <br>
+        <a class="w3-bar-item w3-button" onclick="location.href='Login.html'">Login & Signup</a>
+        <a class="w3-bar-item w3-button w3-teal" onclick="location.href='Profile.html'" >Profile</a>
+        <a class="w3-bar-item w3-button w3-border-bottom" onclick="location.href='#'">Cart / INR : 00</a>
+        <br>
+        <a class="w3-bar-item w3-button " onclick="location.href='index.html'">Home</a>
+        <a class="w3-bar-item w3-button" onclick="location.href='#'" >Admission</a>
+        <a class="w3-bar-item w3-button" onclick="location.href='#'" >Products</a>
+        <a class="w3-bar-item w3-button" onclick="location.href='NewGallery.html'" >Gallery</a>
+        <br><br>
+        <div hidden>
+            <a class="w3-bar-item w3-button" onclick="myAccordion('demo')" href="javascript:void(0)">Shopping <i class="fa fa-caret-down"></i></a>
+            <div id="demo" class="w3-hide">
+                <a class="w3-bar-item w3-button" href="#">Products</a>
+                <a class="w3-bar-item w3-button" href="#">Cart</a>
+                <a class="w3-bar-item w3-button" href="#">Link</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay">
+    </div>
+
+    <div class="w3-main" style="margin-left:250px;">
+
+        <div id="myTop" class="w3-container w3-top w3-2021-inkwell w3-large">
+            <p class="mt-3"><i class="fa fa-bars w3-button w3-2021-main w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+            <span id="myIntro" class="w3-hide w3-2021-main w3-sofia" >KNOCK - DOWN Martial Art Academy</span></p>
+        </div>
+
+        <!-- Header -->
+        <div class="w3-hide-medium w3-hide-small">
+            <header class="w3-container w3-2021-inkwell" style="padding:64px 32px">
+                <div class="w3-row">
+                    <h1 class="w3-col" style="width: 20%;"></h1>
+                    <h1 class="w3-xxxlarge w3-2021-main w3-sofia w3-col" style="width: 60%;">KNOCK - DOWN </h1>
+                </div>
+                <div class="w3-row">
+                    <h1 class="w3-col" style="width: 12%;"></h1>
+                    <h1 class="w3-xxxlarge w3-2021-main w3-sofia w3-col" style="width: 80%;">Martial Art Academy</h1>
+                </div>
+                
+            </header>
+        </div>
+        <div class="w3-hide-small w3-hide-large">
+            <header class="w3-container w3-2021-inkwell" style="padding:64px 32px">
+                <div class="w3-row">
+                    <h1 class="w3-col" style="width: 30%;"></h1>
+                    <h1 class="w3-xxlarge w3-2021-main w3-sofia w3-col" style="width: 60%;">KNOCK - DOWN </h1>
+                </div>
+                <div class="w3-row">
+                    <h1 class="w3-col" style="width: 20%;"></h1>
+                    <h1 class="w3-xxlarge w3-2021-main w3-sofia w3-col" style="width: 70%;">Martial Art Academy</h1>
+                </div>
+                
+            </header>
+        </div>
+        <div class="w3-hide-large w3-hide-medium">
+            <header class="w3-container w3-2021-inkwell" style="padding:64px 32px">
+                <div class="w3-row">
+                    <h1 class="w3-col" style="width: 20%;"></h1>
+                    <h1 class="w3-xlarge w3-2021-main w3-sofia w3-col" style="width: 70%;">KNOCK - DOWN </h1>
+                </div>
+                <div class="w3-row">
+                    <h1 class="w3-col" style="width: 10%;"></h1>
+                    <h1 class="w3-xlarge w3-2021-main w3-sofia w3-col" style="width: 90%;">Martial Art Academy</h1>
+                </div>
+                
+            </header>
+        </div>
+
+        <!-- Login Section -->
+        <div class="container">
+            <div class="row mt-4">
+                
+                <div class="col-md-12">
+                    <div class="row m-1 w3-panel w3-border-blue w3-card-4">
+                        <div class="col-12">
+                            <div class="w3-row">
+                                <h3 class="w3-lobster" align="center" style="margin: 20px;">Profile </h3>
+                            </div>
+                            <div class="w3-row">
+                                <div class="w3-container">
+                                    <p><b>Account Information</b></p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <p class="col-sm-4">
+                                                    <label>First Name</label>
+                                                </p>
+                                                <p class="col-sm-8">
+                                                    <input class="w3-input" type="text" style="width:100%" value="Aryan" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <p class="col-sm-4">
+                                                    <label>Last Name</label>
+                                                </p>
+                                                <p class="col-sm-8">
+                                                    <input class="w3-input" type="text" style="width:100%" value="Aman" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <p class="col-sm-4">
+                                                    <label>Email</label>
+                                                </p>
+                                                <p class="col-sm-8">
+                                                    <input class="w3-input" type="text" style="width:100%" value="abcdefghijaklmnop@gmail.com" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <p class="col-sm-12">
+                                                    
+                                                </p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Password -->
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <p class="col-sm-4">
+                                                    <label> Password </label>
+                                                </p>
+                                                <p class="col-sm-8">
+                                                    <input class="w3-input" type="text" style="width:100%" value="************" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <p class="col-sm-12">
+                                                    <button class="btn btn-primary">Update Password</button>
+                                                    <button class="btn btn-primary" disabled>Submit</button>
+                                                </p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                    <p><b>Basic Details</b></p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <p class="col-sm-4">
+                                                    <label> Father's Name </label>
+                                                </p>
+                                                <p class="col-sm-8">
+                                                    <input class="w3-input" type="text" style="width:100%" value="NA" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <p class="col-sm-4">
+                                                    <label> Mother's Name </label>
+                                                </p>
+                                                <p class="col-sm-8">
+                                                    <input class="w3-input" type="text" style="width:100%" value="NA" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- DOB-->
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <p class="col-sm-4">
+                                                    <label> Date of Birth </label>
+                                                </p>
+                                                <p class="col-sm-8">
+                                                    <input class="w3-input" type="date" style="width:100%" value="NA" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <p class="col-sm-4">
+                                                    <label> Gender </label>
+                                                </p>
+                                                <p class="col-sm-8">
+                                                    <input class="w3-input" type="text" style="width:100%" value="Select Gender" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <p class="col-sm-4">
+                                                    <label> Blood Group </label>
+                                                </p>
+                                                <p class="col-sm-8">
+                                                    <input class="w3-input" type="text" style="width:100%" value="Select Group" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <p class="col-sm-12">
+                                                    <button class="btn btn-primary"> Update Basic Details</button>
+                                                    <button class="btn btn-primary" disabled>Submit</button>
+                                                </p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                    <!-- Contact Info -->
+                                    <p><b>Contact Info </b></p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <div class="row">
+                                                <p class="col-sm-4">
+                                                    <label>Student's Phone No. </label>
+                                                </p>
+                                                <p class="col-sm-8">
+                                                    <input class="w3-input" type="text" style="width:100%" value="+91" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="row">
+                                                <p class="col-sm-4">
+                                                    <label> Father's Phone No. </label>
+                                                </p>
+                                                <p class="col-sm-8">
+                                                    <input class="w3-input" type="text" style="width:100%" value="+91" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="row">
+                                                <p class="col-sm-4">
+                                                    
+                                                </p>
+                                                <p class="col-sm-8">
+                                                    <button class="btn btn-primary"> Update Phone No. </button>
+                                                    <button class="btn btn-primary" disabled>Submit</button>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                    <!-- Present Address -->
+                                    <p><b>Present Address : </b></p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <div class="row">
+                                                <p class="col-sm-3">
+                                                    <label> Address Line 1 </label>
+                                                </p>
+                                                <p class="col-sm-9">
+                                                    <input class="w3-input" type="text" style="width:100%" value="NA" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <div class="row">
+                                                <p class="col-sm-3">
+                                                    <label> Address Line 2 </label>
+                                                </p>
+                                                <p class="col-sm-9">
+                                                    <input class="w3-input" type="text" style="width:100%" value="NA" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- District & State-->
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <p class="col-sm-4">
+                                                    <label> State</label>
+                                                </p>
+                                                <p class="col-sm-8">
+                                                    <input class="w3-input" type="text" style="width:100%" value="Select State" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <p class="col-sm-4">
+                                                    <label> District </label>
+                                                </p>
+                                                <p class="col-sm-8">
+                                                    <input class="w3-input" type="text" style="width:100%" value="Select District" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- District & State-->
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <p class="col-sm-4">
+                                                    <label> Pin Code</label>
+                                                </p>
+                                                <p class="col-sm-8">
+                                                    <input class="w3-input" type="text" style="width:100%" value="" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <p class="col-sm-12">
+                                                    <button class="btn btn-primary"> Update Address</button>
+                                                    <button class="btn btn-primary" disabled>Submit</button>
+                                                </p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                    <!-- Permanent Address -->
+                                    <p><b>Permanent Address : </b></p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <div class="row">
+                                                <p class="col-sm-3">
+                                                    <label> Address Line 1 </label>
+                                                </p>
+                                                <p class="col-sm-9">
+                                                    <input class="w3-input" type="text" style="width:100%" value="NA" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <div class="row">
+                                                <p class="col-sm-3">
+                                                    <label> Address Line 2 </label>
+                                                </p>
+                                                <p class="col-sm-9">
+                                                    <input class="w3-input" type="text" style="width:100%" value="NA" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- District & State-->
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <p class="col-sm-4">
+                                                    <label> State</label>
+                                                </p>
+                                                <p class="col-sm-8">
+                                                    <input class="w3-input" type="text" style="width:100%" value="Select State" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <p class="col-sm-4">
+                                                    <label> District </label>
+                                                </p>
+                                                <p class="col-sm-8">
+                                                    <input class="w3-input" type="text" style="width:100%" value="Select District" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- District & State-->
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <p class="col-sm-4">
+                                                    <label> Pin Code</label>
+                                                </p>
+                                                <p class="col-sm-8">
+                                                    <input class="w3-input" type="text" style="width:100%" value="" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <p class="col-sm-12">
+                                                    <button class="btn btn-primary"> Update Address</button>
+                                                    <button class="btn btn-primary" disabled>Submit</button>
+                                                </p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                    <!-- Qualification -->
+                                    <p><b>Qualification </b></p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-11">
+                                            <div class="row">
+                                                <p class="col-sm-3">
+                                                    <label> Max Qualification </label>
+                                                </p>
+                                                <p class="col-sm-9">
+                                                    <input class="w3-input" type="text" style="width:100%" value="Select Qualification" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-11">
+                                            <div class="row">
+                                                <p class="col-sm-3">
+                                                    <label> School / College Name </label>
+                                                </p>
+                                                <p class="col-sm-9">
+                                                    <input class="w3-input" type="text" style="width:100%" value="NA" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-11">
+                                            <div class="row">
+                                                <p class="col-sm-3">
+                                                    <label> Board  </label>
+                                                </p>
+                                                <p class="col-sm-9">
+                                                    <input class="w3-input" type="text" style="width:100%" value="Select Board" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-11">
+                                            <div class="row">
+                                                <p class="col-sm-3">
+                                                    <label> Marks Obtained  </label>
+                                                </p>
+                                                <p class="col-sm-9">
+                                                    <input class="w3-input" type="text" style="width:100%" value="NA" disabled>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-11">
+                                            <div class="row">
+                                                <p class="col-sm-3">
+                                                    
+                                                </p>
+                                                <p class="col-sm-9">
+                                                    <button class="btn btn-primary"> Update Qualification</button>
+                                                    <button class="btn btn-primary" disabled>Submit</button>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                    <br>
+                                    
+                                </div>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+        <br>
+
+        
+        <!-- About head -->
+        <footer class="w3-container" style="background-color: #1F2833;">
+            <div class="container">
+                <br>
+                <div class="row w3-border-bottom ">
+                    <div class="col-md-8" style="color: #66FCF1;">
+                        <h3 class="w3-sofia">Knock - Down Martial Art Academy</h3>
+                    </div>
+                    <div class="col-1 d-block d-md-none">
+                        <br><br>
+                    </div>
+                    <div class="col-md-4" style="color: #C5C6C7;">
+                        <p align="center" style="font-family: Overlock SC;font-size: 18px;">Contact us : 1234567890 </p>
+                        <p class="d-none d-md-block" align="center">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://wa.me/+9182942 54911?text=Hello Sir, I wanna join you." target="_blank"><i class="fa fa-whatsapp" style="color: #34B7F1;font-size: 24px;"></i></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="mailto:knockdownmartialart@gmail.com" target="_blank"><i class="fa fa-envelope-o text-white" style="font-size: 24px;color: #ec6161;"></i></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.facebook.com/KnockDownMartialArtAcademy" target="_blank"><i class="fa fa-facebook-square text-primary" style="font-size: 24px;color: #4b26f0;"></i></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.instagram.com/knockdownmartialart/" target="_blank"><i class="fa fa-instagram" style="color: #C3073F;font-size: 24px;"></i></a>
+    
+                        </p>
+                        <p class="d-block d-md-none" align="center">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://wa.me/+9182942 54911?text=Hello Sir, I wanna join you." target="_blank"><i class="fa fa-whatsapp" style="color: #34B7F1;font-size: 24px;"></i></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="mailto:knockdownmartialart@gmail.com" target="_blank"><i class="fa fa-envelope-o text-white" style="font-size: 24px;color: #ec6161;"></i></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.facebook.com/KnockDownMartialArtAcademy" target="_blank"><i class="fa fa-facebook-square text-primary" style="font-size: 24px;color: #4b26f0;"></i></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.instagram.com/knockdownmartialart/" target="_blank"><i class="fa fa-instagram" style="color: #C3073F;font-size: 24px;"></i></a>
+    
+                        </p>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </footer>
+
+        <!-- About Developer-->
+        <footer class="w3-container" style="background-color: #C5C6C7;">
+            <div class="row w3-border-bottom " style="font-family: Overlock SC">
+                <div class="col-12">
+                    <p align="center" style="font-size: 15px;">Copyright © 2021 KMA. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+
+    <script>
+    // Open and close the sidebar on medium and small screens
+    function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Change style of top container on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+        document.getElementById("myIntro").classList.add("w3-show-inline-block");
+    } else {
+        document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+        document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+    }
+    }
+
+    // Accordions
+    function myAccordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme";
+    } else { 
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-theme", "");
+    }
+    }
+    </script>
+     
+</body>
+</html> 
