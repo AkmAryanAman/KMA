@@ -3,15 +3,14 @@
     <head>
         <title>Knock - Down Martial Art Academy</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="color.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=shadow-multiple">-->
         
+        <meta property="og:url"           content="https://akmaryanaman.github.io/KMA/Arts.html" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="KNOCK - DOWN Martial Art Academy" />
+        <meta property="og:description"   content="Martial Art Academy at Motihari in Bihar" />
+        <meta property="og:image"         content="https://akmaryanaman.github.io/KMA/MMA.jpg" />
+
+
         <link rel="stylesheet" href="bootstrap.min.css">
         <link rel="stylesheet" href="css.css">
         <link rel="stylesheet" href="color.css">
@@ -170,29 +169,23 @@
                         </div>
                     </div>
 
-                    <!-- MMA -->
-                    <div class="row m-1 w3-panel w3-border-blue w3-card-4 mt-4" id="MMA">
+                    <!-- MMA for testing purpose
+                    <div class="row m-0 w3-panel w3-border-blue w3-card-4 mt-4 Main-id" id="MMA">
                         <div class="col-12">
-                            <div class="m-2 bg-white">
+                            <div class="m-0 bg-white">
                                 <div class="row m-1">
                                     <div class="col-12">
                                         <div class="m-3">
-                                            <h2 align="left" class="heading" style="font-family: Original Surfer;"> Mixed martial arts (MMA) </h2>
+                                            <h2 align="left" class="heading heading-name" style="font-family: Original Surfer;"> Mixed martial arts (MMA) </h2>
                                             
                                         </div>
                                     </div>
-                                    <!--<div class="col-4">
-                                        <div class="m-3" style="font-family: Overlock SC;">
-                                            <h6 align="right" style="font-size: 14px;font-weight: bold;"> Nov, 7 2021 </h6>
-                                            <p align="right" style="font-size: 13px;">By - Aryan Aman </p>
-                                        </div>
-                                    </div>-->
                                 </div>
                                 <div class="row m-0">
                                     <div class="col-12">
-                                        <div class="row m-0">
+                                        <div class="row">
                                             <div class="col-md-6">
-                                                <img src="MMA.jpg" class="img-fluid" max-height="200px">
+                                                <img src="MMA.jpg" class="img-fluid" width="100%">
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="row">
@@ -206,7 +199,7 @@
                                                 <div class="row">
                                                     <div class="col-12" onclick="location.href='#'" onmouseover="this.style='cursor:pointer;'">
                                                         <div class="m-2 m-auto" align="center">
-                                                            <p style="font-family: Lobster;"> CONTINUE READING <i class="fa fa-angle-double-right" style="font-size:24px"></i> </p>
+                                                            <p style="font-family: Lobster;" onclick="document.getElementById('MMAModel').style.display='block'"> CONTINUE READING <i class="fa fa-angle-double-right" style="font-size:24px"></i> </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -218,410 +211,349 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--<div class="row m-3">
-                                    <div class="col-md-5" onclick="location.href='#'" onmouseover="this.style='cursor:pointer;'">
-                                        <div class="m-2 m-auto" align="center">
-                                            <p style="font-family: Lobster;"> CONTINUE READING <i class="fa fa-angle-double-right" style="font-size:24px"></i> </p>
+                            </div>
+                        </div>
+                    </div>-->
+                    
+
+                    <div id="h54e">
+                        
+                    </div>
+
+        <script>
+            Mainid = ["MixedMartialArts","Boxing","MuayThai","Kickboxing","Judo","Karate","FilipinoMartialArts","PekitiTirsiaKali"];
+            
+            Name  = ["Mixed martial arts (MMA)","Boxing","Muay Thai","Kickboxing","Judo","Karate","Filipino martial arts (FMA)","Pekiti-Tirsia Kali"];
+            
+            photo = ["MMA.jpg","MMA.jpg","MMA.jpg","MMA.jpg","MMA.jpg","MMA.jpg","MMA.jpg","MMA.jpg"];
+            
+            description = [[`Mixed martial arts (MMA), sometimes referred to as <b> cage fighting </b>, <b>no holds barred (NHB)</b>,
+                            and <b>ultimate fighting</b>, is a full-contact combat sport based on striking,
+                            grappling and ground fighting, incorporating techniques from various combat sports 
+                            and martial arts from around the world.`,
+                            
+                            `<br>Originally promoted as a competition to find the most effective martial arts for 
+                            real unarmed combat, competitors from different fighting styles were pitted against 
+                            one another in contests with relatively few rules. Later, individual fighters incorporated 
+                            multiple martial arts into their style.`
+                            ],
+                            
+                            [`Boxing is a combat form that is widely used in MMA and is one of the primary striking bases 
+                            for many fighters. Boxing punches account for the vast majority of strikes during the stand up 
+                            portion of a bout and also account for the largest number of significant strikes, knock downs 
+                            and KOs in MMA matches.`,
+
+                            `Several aspects of boxing are extremely valuable such as footwork, combinations, and defensive 
+                            techniques like slips, head movement and stance (including chin protection and keeping hands up) 
+                            commonly known as the Guard position.`
+                            ],
+
+                            [`Muay Thai sometimes referred to as "Thai boxing", is a martial art and combat sport that uses 
+                            stand-up striking along with various clinching techniques. This discipline is known as the "art 
+                            of eight limbs" as it is characterized by the combined use of fists, elbows, knees and shins.`,
+
+                            `Muay Thai became widespread internationally in the late-20th to 21st century, when Westernized 
+                            practitioners from Thailand began competing in kickboxing and mixed-rules matches as well as 
+                            matches under muay Thai rules around the world.`,
+
+                            `Muay Thai is related to other martial art styles of the Indian cultural sphere such as Musti-yuddha, 
+                            Muay Chaiya, Muay boran, Muay Lao, Lethwei, Pradal Serey and Tomoi. Muay Thai developed from the 
+                            traditional Muay Boran. A practitioner of Muay Thai is known as a nak muay.`
+
+                            ],
+
+                            [`Kickboxing is a stand-up combat sport based on kicking and punching, historically developed from 
+                            karate mixed with boxing. Kickboxing is practiced for self-defence, general fitness, or as a contact sport.`,
+
+                            `Japanese kickboxing originated in the late 1950s, with competitions held since then. American kickboxing 
+                            originated in the 1970s and was brought to prominence in September 1974, when the Professional Karate 
+                            Association (PKA) held the first World Championships.`,
+
+                            `Historically, kickboxing can be considered a hybrid martial art formed from the combination of 
+                            elements of various traditional styles.`,
+
+                            `This approach became increasingly popular since the 1970s, and since the 1990s, kickboxing has contributed 
+                            to the emergence of mixed martial arts via further hybridization with ground fighting techniques from 
+                            Brazilian jiu-jitsu and folk wrestling.`
+
+                            ],
+
+                            [`Judo is generally categorized as a modern Japanese martial art, which has since evolved into an Olympic 
+                            event. The sport was created in 1882 by Jigoro Kano as a physical, mental, and moral pedagogy in Japan.`,
+
+                            `With its origins coming from jujutsu, judo's most prominent feature is its competitive element, where 
+                            the objective is to either throw or take down an opponent to the ground, immobilize or otherwise subdue 
+                            an opponent with a pin, or force an opponent to submit with a joint lock or a choke.`,
+
+                            `Strikes and thrusts by hands and feet as well as weapons defences are a part of judo, but only in 
+                            pre-arranged forms (kata) and are not allowed in judo competition or free practice (randori). A judo 
+                            practitioner is called a "judoka", and the judo uniform is called "judogi".`
+
+                            ],
+
+                            [`Karate, especially Kyokushin and other full contact styles, has proven to be effective in the sport 
+                            as it is one of the core foundations of kickboxing, and specializes in striking techniques. Various 
+                            styles of karate are practiced by some MMA fighters.`,
+
+                            `Karate is a martial art developed in the Ryukyu Kingdom. It developed from the indigenous Ryukyuan 
+                            martial arts  under the influence of Kung Fu, particularly Fujian White Crane. `,
+
+                            `Karate is now predominantly a striking art using punching, kicking, knee strikes, elbow strikes 
+                            and open-hand techniques such as knife-hands, spear-hands and palm-heel strikes.`,
+
+                            `Historically, and in some modern styles, grappling, throws, joint locks, restraints and vital-point 
+                            strikes are also taught.  A karate practitioner is called a karateka.`
+
+                            ],
+
+                            [`Filipino martial arts (FMA) refer to ancient Malay and newer modified fighting methods devised in 
+                            the Philippines. It incorporates elements from both Western and Eastern Martial Arts, the most 
+                            popular forms of which are known as Arnis, Eskrima, and Kali.`,
+
+                            `The intrinsic need for self-preservation was the genesis of these systems. Throughout the ages, 
+                            invaders and evolving local conflict imposed new dynamics for combat in the islands now making 
+                            up the Philippines.`,
+
+                            `The Filipino people developed battle skills as a direct result of an appreciation of their 
+                            ever-changing circumstances. They learned often out of necessity how to prioritize, allocate 
+                            and use common resources in combative situations.`
+
+                            ],
+
+                            [`Pekiti-Tirsia Kali is a style specific to Filipino Martial Arts. Pekiti-Tirsia Kali was founded 
+                            in 1897 and is the system of the Tortal family. The sole heir and guardian of this system is Leo T. 
+                            Gaje Jr.. Pekiti-Tirsia is strictly a combat-oriented system, as opposed to a sport-focused fighting style.`,
+
+                            `It is a fighting system that focuses on edged, impact and improvised weapons. PTK has been adopted as the 
+                            preferred combative training program by elite military and law enforcement units around the world. It claims 
+                            to be a very lethal fighting method for self-defence.`,
+
+                            `Pekiti-Tirsia's movements are based on the traditional blade art of the Philippines - Kali, which involves slicing 
+                            swords in a circular motion, symbolic of the orbits of the moon and the planets. It also incorporated triangular 
+                            movements symbolic of constellations. In ancient times.`,
+
+                            `All fighting ranges are integral parts of the Pekiti-Tirsia system, but special attention is given to closing in 
+                            to kill in close-quarter combat. Integral to this is a coiled close quarter stance that allows evasion and 
+                            generation of a powerful strike even in close range. Pekiti-Tirsia is about quartering the opponent, or 'cutting 
+                            up into little pieces', emphasizing destruction with counter offence while not getting hit. The Pekiti-Tirsia 
+                            methodology originates from offensive and counter offensive principles against attacks from all ranges, angles 
+                            and threat levels. There is less emphasis on purely defensive techniques per se, as this is not seen as an 
+                            effective survival strategy.`
+                            ]
+                        ];
+            
+            
+            Blogtitle = "";
+            
+            for(i=0; i< photo.length; i++){
+                finalDescription = "";
+                switch(i){
+                    case 0: 
+                    for(j=0;j<2;j++){
+                        finalDescription += description[i][j] + "<br><br>";
+                    }
+                    break;
+                    
+                    case 1: 
+                    for(j=0;j<2;j++){
+                        finalDescription += description[i][j] + "<br><br>";
+                    }
+                    break;
+                    
+                    case 2 : 
+                    for(j=0;j<3;j++){
+                        finalDescription += description[i][j] + "<br><br>";
+                    }
+                    break;
+
+                    case 3 : 
+                    for(j=0;j<4;j++){
+                        finalDescription += description[i][j] + "<br><br>";
+                    }
+                    break;
+
+                    case 4 : 
+                    for(j=0;j<3;j++){
+                        finalDescription += description[i][j] + "<br><br>";
+                    }
+                    break;
+
+                    case 5 : 
+                    for(j=0;j<4;j++){
+                        finalDescription += description[i][j] + "<br><br>";    
+                    }
+                    break;
+
+                    case 6 : 
+                    for(j=0;j<3;j++){
+                        finalDescription += description[i][j] + "<br><br>";
+                    }
+                    break;
+
+                    case 7 : for(j=0;j<4;j++){
+                        finalDescription += description[i][j] + "<br><br>";
+                    }
+                    break;
+                }
+                Blogtitle += 
+                    `<!-- This Blog for `+ Name[i] +` -->
+                    <div class="row m-0 w3-panel w3-border-blue w3-card-4 mt-4" id="`+ Mainid[i]+`">
+                        <div class="col-12">
+                            <div class="m-0 bg-white">
+                                <div class="row m-1">
+                                    <div class="col-12">
+                                        <div class="m-3">
+                                            <h2 align="left" class="heading heading-name" style="font-family: Original Surfer;"> ` + Name[i] + ` </h2>  
                                         </div>
                                     </div>
-                                    <div class="col-md-2">
+                                </div>
+                                <div class="row m-0">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <img src="MMA.jpg" class="img-fluid" width="100%">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <br class="d-block d-md-none">
+                                                    <p style="font-family: Courgette ;">
+                                                        ` + description[0] +  `
+                                                    </p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12" onclick="location.href='#`+ Mainid[i]+`" onmouseover="this.style='cursor:pointer;'">
+                                                        <div class="m-2 m-auto" align="center">
+                                                            <p style="font-family: Lobster;" onclick="document.getElementById('`+ Mainid[i] +`Model').style.display='block'"> CONTINUE READING <i class="fa fa-angle-double-right" style="font-size:24px"></i> </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 mt-4">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal for `+ Name[i] +` -->
+                    <div id="`+ Mainid[i] +`Model" class="w3-modal">
+                        <div class="w3-modal-content">
+                            <div class="w3-container">
+                                <span onclick="document.getElementById('`+ Mainid[i] +`Model').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                <div class="w3-row m-2">
+                                    <h3 class="w3-lobster" align="center" style="margin: 20px;">` + Name[i] + ` </h3>
+                                    <hr>
+                                    <div class="row m-2">
+                                        <div class="col-md-6">
+                                            <img src="` + photo[i] +  `" class="img-fluid" width="100%">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <br class="d-block d-md-none">
+                                                <p style="font-family: Courgette ;">
+                                                    ` + finalDescription +  `<br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row m-2">
+                                    <div class="col-md-3">
 
                                     </div>
-                                    <div class="col-md-5" style="font-family: Lobster;">
+                                    <div class="col-md-6" style="font-family: Lobster;">
                                         <div class="row">
                                             <div class="col">
-                                                <p align="center">
-                                                    <a class="mr-4 text-dark" href="#"><i class="fa fa-thumbs-o-up" style="font-size:16px"> 11M </i></a>
+                                                <p class="d-none d-md-block" align="center">
+                                                    <a>Share this Artical on : </a>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <a href="https://wa.me/?text=https://akmaryanaman.github.io/KMA/Arts.html#`+ Mainid[i] +`" target="_blank"><i class="fa fa-whatsapp" style="color: #34B7F1;font-size: 24px;"></i></a>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://akmaryanaman.github.io/KMA/Arts.html#`+ Mainid[i] +`" target="_blank"><i class="fa fa-facebook-square text-primary" style="font-size: 24px;color: #4b26f0;"></i></a>
+                                                    
+                                                </p>
+                                                <p class="d-block d-md-none" align="center">
+                                                    <a>Share this Artical : </a>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <a href="https://wa.me/?text=https://akmaryanaman.github.io/KMA/Arts.html#`+ Mainid[i] +`" target="_blank"><i class="fa fa-whatsapp" style="color: #34B7F1;font-size: 24px;"></i></a>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://akmaryanaman.github.io/KMA/Arts.html#`+ Mainid[i] +`" target="_blank"><i class="fa fa-facebook-square text-primary" style="font-size: 24px;color: #4b26f0;"></i></a>
+                                                    
                                                 </p>
                                             </div>
-                                            <div class="col">
-                                                <p align="center">
-                                                    <a class="mr-4 text-dark" href="#"><i class="fa fa-share" style="font-size:16px"> 5M </i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        
+                                    </div>
+                                </div>
+                                <hr>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+            }
+            document.getElementById("h54e").innerHTML = Blogtitle;
+        </script>
+
+
+                    <!-- Modal for testing purpose
+                    <div id="MMAModel" class="w3-modal">
+                        <div class="w3-modal-content">
+                            <div class="w3-container">
+                                <span onclick="document.getElementById('MMAModel').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                <div class="w3-row ">
+                                    <h3 class="w3-lobster" align="center" style="margin: 20px;">Mixed martial arts (MMA) </h3>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="MMA.jpg" class="img-fluid" width="100%">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <br class="d-block d-md-none">
+                                                <p style="font-family: Courgette ;">Mixed martial arts (MMA), sometimes referred to as <b> cage fighting </b>, <b>no holds barred (NHB)</b>,
+                                                    and <b>ultimate fighting</b>, is a full-contact combat sport based on striking,
+                                                    grappling and ground fighting, incorporating techniques from various combat sports 
+                                                    and martial arts from around the world.
+                                                </p>
+                                            </div>
+                                            <div class="row">
+                                                <br class="d-block d-md-none">
+                                                <p style="font-family: Courgette ;">Mixed martial arts (MMA), sometimes referred to as <b> cage fighting </b>, <b>no holds barred (NHB)</b>,
+                                                    and <b>ultimate fighting</b>, is a full-contact combat sport based on striking,
+                                                    grappling and ground fighting, incorporating techniques from various combat sports 
+                                                    and martial arts from around the world.
+                                                </p>
+                                            </div>
+                                            <div class="row">
+                                                <br class="d-block d-md-none">
+                                                <p style="font-family: Courgette ;">Mixed martial arts (MMA), sometimes referred to as <b> cage fighting </b>, <b>no holds barred (NHB)</b>,
+                                                    and <b>ultimate fighting</b>, is a full-contact combat sport based on striking,
+                                                    grappling and ground fighting, incorporating techniques from various combat sports 
+                                                    and martial arts from around the world.
                                                 </p>
                                             </div>
                                         </div>
-                                    </div>-->
+                                    </div>
                                 </div>
+                                <br>
+                                <br>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- End of First Blog -->
-
-                    <!-- Boxing -->
-                    <div class="row m-1 w3-panel w3-border-blue w3-card-4 mt-4" id="Boxing">
-                        <div class="col-12">
-                            <div class="m-2 bg-white">
-                                <div class="row m-1">
-                                    <div class="col-12">
-                                        <div class="m-3">
-                                            <h2 align="left" class="heading" style="font-family: Original Surfer;"> Boxing </h2>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row m-0">
-                                    <div class="col-12">
-                                        <div class="row m-0">
-                                            <img src="MMA.jpg" class="img-fluid" max-height="200px">
-                                        </div>
-                                        <div class="row m-0 mt-4">
-                                            <p style="font-family: Courgette ;">
-                                                Boxing is a combat form that is widely used in MMA and is one of
-                                                the primary striking bases for many fighters. Boxing punches account for 
-                                                the vast majority of strikes during the stand up portion of a bout and 
-                                                also account for the largest number of significant strikes, knock downs 
-                                                and KOs in MMA matches.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row m-3">
-                                    <div class="col-md-5" onclick="location.href='#'" onmouseover="this.style='cursor:pointer;'">
-                                        <div class="m-2 m-auto" align="center">
-                                            <p style="font-family: Lobster;"> CONTINUE READING <i class="fa fa-angle-double-right" style="font-size:24px"></i> </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Blog -->
-
-                    <!-- Muay Thai -->
-                    <div class="row m-1 w3-panel w3-border-blue w3-card-4" id="Kickboxing">
-                        <div class="col-12">
-                            <div class="m-2 bg-white">
-                                <div class="row m-1">
-                                    <div class="col-12">
-                                        <div class="m-3">
-                                            <h2 align="left" class="heading" style="font-family: Original Surfer;"> Kickboxing </h2>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row m-0">
-                                    <div class="col-12">
-                                        <div class="row m-0">
-                                            <img src="MMA.jpg" class="img-fluid" max-height="200px">
-                                        </div>
-                                        <div class="row m-0 mt-4">
-                                            <p style="font-family: Courgette ;">
-                                                Kickboxing is a stand-up combat sport based on kicking and 
-                                                punching, historically developed from karate mixed with boxing
-                                                . Kickboxing is practiced for self-defence, general fitness, 
-                                                or as a contact sport.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row m-3">
-                                    <div class="col-md-5" onclick="location.href='#'" onmouseover="this.style='cursor:pointer;'">
-                                        <div class="m-2 m-auto" align="center">
-                                            <p style="font-family: Lobster;"> CONTINUE READING <i class="fa fa-angle-double-right" style="font-size:24px"></i> </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Blog -->
-
-                    <!-- Muay Thai -->
-                    <div class="row m-1 w3-panel w3-border-blue w3-card-4" id="Muay">
-                        <div class="col-12">
-                            <div class="m-2 bg-white">
-                                <div class="row m-1">
-                                    <div class="col-12">
-                                        <div class="m-3">
-                                            <h2 align="left" class="heading" style="font-family: Original Surfer;"> Muay Thai </h2>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row m-0">
-                                    <div class="col-12">
-                                        <div class="row m-0">
-                                            <img src="MMA.jpg" class="img-fluid" max-height="200px">
-                                        </div>
-                                        <div class="row m-0 mt-4">
-                                            <p style="font-family: Courgette ;">
-                                                Muay Thai sometimes referred to as "Thai boxing", is a 
-                                                martial art and combat sport that uses stand-up striking 
-                                                along with various clinching techniques. This discipline is 
-                                                known as the "art of eight limbs" as it is characterized by 
-                                                the combined use of fists, elbows, knees and shins. 
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row m-3">
-                                    <div class="col-md-5" onclick="location.href='#'" onmouseover="this.style='cursor:pointer;'">
-                                        <div class="m-2 m-auto" align="center">
-                                            <p style="font-family: Lobster;"> CONTINUE READING <i class="fa fa-angle-double-right" style="font-size:24px"></i> </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Blog -->
-
-                    <!-- Judo -->
-                    <div class="row m-1 w3-panel w3-border-blue w3-card-4" id="Judo">
-                        <div class="col-12">
-                            <div class="m-2 bg-white">
-                                <div class="row m-1">
-                                    <div class="col-12">
-                                        <div class="m-3">
-                                            <h2 align="left" class="heading" style="font-family: Original Surfer;"> Judo </h2>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row m-0">
-                                    <div class="col-12">
-                                        <div class="row m-0">
-                                            <img src="MMA.jpg" class="img-fluid" max-height="200px">
-                                        </div>
-                                        <div class="row m-0 mt-4">
-                                            <p style="font-family: Courgette ;">
-                                                Judo is generally categorized as a modern Japanese martial 
-                                                art, which has since evolved into an Olympic event. The sport 
-                                                was created in 1882 by Jigoro Kano as a physical, mental, 
-                                                and moral pedagogy in Japan. 
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row m-3">
-                                    <div class="col-md-5" onclick="location.href='#'" onmouseover="this.style='cursor:pointer;'">
-                                        <div class="m-2 m-auto" align="center">
-                                            <p style="font-family: Lobster;"> CONTINUE READING <i class="fa fa-angle-double-right" style="font-size:24px"></i> </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Blog -->
-
-                    <!-- Karate -->
-                    <div class="row m-1 w3-panel w3-border-blue w3-card-4" id="Karate">
-                        <div class="col-12">
-                            <div class="m-2 bg-white">
-                                <div class="row m-1">
-                                    <div class="col-12">
-                                        <div class="m-3">
-                                            <h2 align="left" class="heading" style="font-family: Original Surfer;"> Karate </h2>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row m-0">
-                                    <div class="col-12">
-                                        <div class="row m-0">
-                                            <img src="MMA.jpg" class="img-fluid" max-height="200px">
-                                        </div>
-                                        <div class="row m-0 mt-4">
-                                            <p style="font-family: Courgette ;">
-                                                Karate, especially Kyokushin and other full contact styles, 
-                                                has proven to be effective in the sport as it is one of the 
-                                                core foundations of kickboxing, and specializes in striking 
-                                                techniques. Various styles of karate are practiced by some MMA fighters. 
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row m-3">
-                                    <div class="col-md-5" onclick="location.href='#'" onmouseover="this.style='cursor:pointer;'">
-                                        <div class="m-2 m-auto" align="center">
-                                            <p style="font-family: Lobster;"> CONTINUE READING <i class="fa fa-angle-double-right" style="font-size:24px"></i> </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Blog -->
-
-                    <!-- Filipino martial arts (FMA) -->
-                    <div class="row m-1 w3-panel w3-border-blue w3-card-4" id="FMA">
-                        <div class="col-12">
-                            <div class="m-2 bg-white">
-                                <div class="row m-1">
-                                    <div class="col-12">
-                                        <div class="m-3">
-                                            <h2 align="left" class="heading" style="font-family: Original Surfer;">
-                                                Filipino martial arts (FMA) 
-                                            </h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row m-0">
-                                    <div class="col-12">
-                                        <div class="row m-0">
-                                            <img src="MMA.jpg" class="img-fluid" max-height="200px">
-                                        </div>
-                                        <div class="row m-0 mt-4">
-                                            <p style="font-family: Courgette ;">
-                                                Filipino martial arts (FMA) refer to ancient Malay and newer 
-                                                modified fighting methods devised in the Philippines. It 
-                                                incorporates elements from both Western and Eastern Martial 
-                                                Arts, the most popular forms of which are known as Arnis, 
-                                                Eskrima, and Kali. 
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row m-3">
-                                    <div class="col-md-5" onclick="location.href='#'" onmouseover="this.style='cursor:pointer;'">
-                                        <div class="m-2 m-auto" align="center">
-                                            <p style="font-family: Lobster;"> CONTINUE READING <i class="fa fa-angle-double-right" style="font-size:24px"></i> </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Blog -->
-
-                    <!-- Pekiti-Tirsia Kali -->
-                    <div class="row m-1 w3-panel w3-border-blue w3-card-4" id="PTK">
-                        <div class="col-12">
-                            <div class="m-2 bg-white">
-                                <div class="row m-1">
-                                    <div class="col-12">
-                                        <div class="m-3">
-                                            <h2 align="left" class="heading" style="font-family: Original Surfer;">
-                                                Pekiti-Tirsia Kali 
-                                            </h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row m-0">
-                                    <div class="col-12">
-                                        <div class="row m-0">
-                                            <img src="MMA.jpg" class="img-fluid" max-height="200px">
-                                        </div>
-                                        <div class="row m-0 mt-4">
-                                            <p style="font-family: Courgette ;">
-                                                Pekiti-Tirsia Kali is a style specific to Filipino Martial 
-                                                Arts. Pekiti-Tirsia Kali was founded in 1897 and is the system 
-                                                of the Tortal family. The sole heir and guardian of this system 
-                                                is Leo T. Gaje Jr.. Pekiti-Tirsia is strictly a combat-oriented 
-                                                system, as opposed to a sport-focused fighting style. 
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row m-3">
-                                    <div class="col-md-5" onclick="location.href='#'" onmouseover="this.style='cursor:pointer;'">
-                                        <div class="m-2 m-auto" align="center">
-                                            <p style="font-family: Lobster;"> CONTINUE READING <i class="fa fa-angle-double-right" style="font-size:24px"></i> </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Blog -->
-
-
-
-
+                    </div>-->
 
                 </div>
                 
             </div>
         </div>
 
-
-        <!-- Modal -->
-        <div id="id01" class="w3-modal">
-            <div class="w3-modal-content">
-                <div class="w3-container">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                    <div class="w3-row ">
-                        <h3 class="w3-lobster" align="center" style="margin: 20px;">Sign up</h3>
-                        <div class="w3-row">
-                            <form class="w3-container ">
-                                <p>Please fill in this form to create an account.</p>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <p>
-                                            <input class="w3-input" type="text" style="width:90%" required>
-                                            <label>First Name</label>
-                                        </p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p>
-                                            <input class="w3-input" type="text" style="width:90%" required>
-                                            <label>Last Name</label>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <p>
-                                            <input class="w3-input" type="email" style="width:90%" required> 
-                                            <label>Email</label>
-                                        </p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <p>
-                                            <input class="w3-input" type="password" style="width:90%" required>
-                                            <label>Password</label>
-                                        </p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p>
-                                            <input class="w3-input" type="password" style="width:90%" required>
-                                            <label>Confirm Password</label>
-                                        </p>
-                                    </div>
-                                </div>
-                                <p>
-                                    <input id="milk" class="w3-check" type="checkbox" checked="checked">
-                                    <label> creating an account you agree to our <a href="#">Terms & Privacy</a>. </label>
-                                <p align="center">
-                                    <button class="w3-button w3-section w3-teal w3-ripple" style="width: 80%;">Sign up </button>
-                                </p>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
 
         <br>
 
@@ -714,6 +646,9 @@
         x.previousElementSibling.className.replace(" w3-theme", "");
     }
     }
+
+    
+
     </script>
      
 </body>
