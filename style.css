@@ -27,7 +27,7 @@
     color: rgb(236, 83, 83) ;
 }
 .Main{
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(file:///C:/Users/91854/VS%20Code/img/KMA/img/Poster.JPG)no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(/img/Poster.JPG)no-repeat;
     background-size: cover;
     height: 100vh;
 }
