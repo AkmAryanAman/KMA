@@ -27,7 +27,7 @@
     color: rgb(236, 83, 83) ;
 }
 .Main{
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(/img/PosterC.JPG)no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(https://akmaryanaman.github.io/KMA/img/PosterC.JPG)no-repeat;
     background-size: cover;
     height: 100vh;
 }
@@ -109,7 +109,7 @@ p{
 /*********************** discover *************************/
 
 .discover{
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(/img/PosterC2.JPG)no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(https://akmaryanaman.github.io/KMA/img/PosterC2.JPG)no-repeat;
     background-size: cover;
     width: 100%;
 }
